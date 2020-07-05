@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+.navigation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+    width: max-content;
+    border: 1px solid black;
+}
+.navigation-wrapper .brand-logo {
+    margin-bottom: 50px;
+}
+.navigation-wrapper ul {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 70vh;
+    list-style: none;
+}
+
+.content-wrapper {
+    margin-left: 12%;
+}
+
+.home-wrapper {
+    height: 100vh;
+}
+.home-content {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.intro-photo {
+    width: max-content;
+}
+.intro-photo img {
+    width: 500px;
+    height: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
