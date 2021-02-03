@@ -1,50 +1,83 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navigation-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding: 40px;
-    width: max-content;
-    border: 1px solid black;
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #fda085, #f6d365);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.navigation-wrapper .brand-logo {
-    margin-bottom: 50px;
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.7), 
+        rgba(255,255,255,.3)
+        );
+    z-index: 2;
+    backdrop-filter: blur(1.5rem);
+    box-shadow: 6px 6px 20px rgba(122,122,122,.212);
 }
-.navigation-wrapper ul {
-    border: 1px solid red;
+.coming-soon {
+    padding: 40px 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 0;
-    height: 70vh;
-    list-style: none;
-}
-
-.content-wrapper {
-    margin-left: 12%;
-}
-
-.home-wrapper {
-    height: 100vh;
-}
-.home-content {
-    height: 90vh;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-
 }
-.intro-photo {
-    width: max-content;
+.coming-soon .brand {
+    align-self: flex-start;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto Slab', sans-serif;
 }
-.intro-photo img {
-    width: 500px;
-    height: auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+.coming-soon p:nth-child(2) {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 5.3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', serif;
+}
+.coming-soon p:nth-child(3) {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.5)
+        );
+        position: absolute;
+        border-radius: 50%;
+}
+.circle1 {
+    width: 20rem;
+    height: 20rem;
+    top: 5%;
+    right: 8%;
+}
+.circle2 {
+    width: 15rem;
+    height: 15rem;
+    bottom: 2%;
+    left: 10%;
 }
