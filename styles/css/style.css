@@ -81,3 +81,34 @@ main {
     bottom: 2%;
     left: 10%;
 }
+
+@media screen and (max-width: 769px) {
+    .coming-soon p:nth-child(2) {
+        font-size: 3.3em;
+    }
+}
+@media screen and (max-width: 415px) {
+    .glass {
+        width: 70%;
+    }
+    .coming-soon {
+        padding: 40px;
+    }
+    .coming-soon .brand {
+        font-size: 1rem;
+    }
+    .coming-soon p:nth-child(2) {
+        font-size: 1.7em;
+    }
+    .coming-soon p:nth-child(3) {
+        font-size: 1em;
+    }
+    .circle1 {
+        width: 7rem;
+        height: 7rem;
+    }
+    .circle2 {
+        width: 9rem;
+        height: 9rem;
+    }
+}
